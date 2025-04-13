@@ -2,7 +2,7 @@
 import pytest
 from src.position import calculate_position_value, calculate_delta
 
-@pytest.mark.parametrize("shares,price,expected", [
+@pytest.mark.parametrize('shares, price, expected', [
     (100, 50, 5000),      # 正常場景
     (0, 50, 0),           # 邊界：零持倉
     (100, 0, 0),          # 邊界：零價格
